@@ -1,19 +1,16 @@
-"""MATH-329 HW1 — entry point.
-
-Run as: python main.py  (from code/, per the submission instructions)
-Reads data from ../data/, writes results to ../results/.
-"""
-
-from pathlib import Path
-
-DATA_DIR = Path(__file__).resolve().parent / ".." / "data"
-RESULTS_DIR = Path(__file__).resolve().parent / ".." / "results"
+from model import load_data, labels_to_signs, LAMBDA
+import q2
+import q3
+import q4
 
 
 def main():
-    RESULTS_DIR.mkdir(exist_ok=True)
-    # TODO: load data from DATA_DIR, run the optimization, write
-    # requested outputs to RESULTS_DIR.
+    X_train, y_train, X_test, y_test = load_data()
+    s_train = labels_to_signs(y_train)
+
+    q2.run(X_train, s_train, LAMBDA)
+    q3.run(X_train, s_train, LAMBDA)
+    q4.run(X_train, s_train, LAMBDA)
 
 
 if __name__ == "__main__":
