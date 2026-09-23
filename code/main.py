@@ -2,6 +2,7 @@ from model import load_data, labels_to_signs, LAMBDA
 import q2
 import q3
 import q4
+from q5 import q5_plot
 
 
 def main():
@@ -10,8 +11,9 @@ def main():
 
     q2.run(X_train, s_train, LAMBDA)
     q3.run(X_train, s_train, LAMBDA)
-    q4.run(X_train, s_train, LAMBDA)
-
+    theta_final, obj_hist, gradnorm_hist = q4.run(X_train, s_train, LAMBDA)
+    q5_plot(obj_hist, gradnorm_hist)
+    
 
 if __name__ == "__main__":
     main()

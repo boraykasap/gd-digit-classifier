@@ -1,0 +1,5 @@
+Lipschitz constant L = sigma_max(X)^2 + lambda: 7.942860e+05
+step size alpha = 1/L: 1.258992e-06
+stopping reason: grad_tol
+iterations: 866
+elapsed time (s): 11.21
