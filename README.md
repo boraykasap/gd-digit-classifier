@@ -34,3 +34,4 @@ covers all questions).
 - `results/q4_summary.txt`: for Q4, the Lipschitz constant `L`, the constant
   step size `alpha = 1/L`, the stopping reason (gradient tolerance vs. the
   3-minute cap), iteration count, and elapsed time.
+- `results/q5_convergence.pdf`: for Q5 the two-pannels plots of `f_lambda(theta_k)` and `||grad f_lambda(theta_k)||`
