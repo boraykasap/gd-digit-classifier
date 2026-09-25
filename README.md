@@ -35,3 +35,5 @@ covers all questions).
   step size `alpha = 1/L`, the stopping reason (gradient tolerance vs. the
   3-minute cap), iteration count, and elapsed time.
 - `results/q5_convergence.pdf`: for Q5 the two-pannels plots of `f_lambda(theta_k)` and `||grad f_lambda(theta_k)||`
+- `results/theta_final.npy` : the final parameter vector `theta_final` obtained from the run of Q5
+- `results/q7_errors.txt` : for Q7, the classification error rates (for train and test)
